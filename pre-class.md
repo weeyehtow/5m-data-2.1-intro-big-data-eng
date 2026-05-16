@@ -1,15 +1,57 @@
-# Self Studies
+# Module 2: Your Data Engineering Journey
 
-## Brief
+### A Field Guide for Building your First Data Platform
 
-In this lesson, we will be learning about the concept of big data and data engineering. We will also explore one of the most popular NoSQL databases- MongoDB, and how to perform CRUD operations.
+--- 
 
-### Big Data
+## The Story So Far...
 
-- [Introduction to Big Data](https://www.digitalocean.com/community/tutorials/an-introduction-to-big-data-concepts-and-terminology)
+In Module 1, you learned to work with data at the desk level — Python, pandas, SQL, and exploratory analysis. You can read data, clean it, query it, and draw insights from it.
 
-### JSON
+That's the equivalent of being able to read and write.
 
-Read up on JSON to understand the syntax and structure, as MongoDB stores data in a JSON-like format.
+Module 2 is about learning to build the *plumbing* — the infrastructure that moves, stores, transforms, and serves data at scale, reliably, every day, without you manually running scripts.
 
-- [Introduction to JSON](https://www.digitalocean.com/community/tutorials/an-introduction-to-json)
+---
+
+![Unit 2.1](./assets/unit-2-1-introduction-to-big-data-engineering.png)
+
+
+## Meet FreshCart
+
+You've just been hired as a *Junior Data Engineer* at **FreshCart**, a mid-sized e-commerce grocery company in Singapore with around 200 employees. FreshCart sells fresh produce, household essentials and everyday consumer goods through its website and mobile app.
+
+The company generates data from multiple sources: 
+- Transactional database (PostgreSQL)
+- Website and mobile app (event logs) 
+- Third-party logistics partners (APIs)
+- Marketing platforms
+- Various customer reviews scraped from online social media
+
+On your first day, your manager tells you:
+
+> *"We have data everywhere, but nobody trusts the numbers in our dashboards. The marketing team pulls different figures from the data team. Our analysts spend 60% of their time cleaning spreadsheets. We need you to help us build a proper data platform."*
+
+Over the next 10 lessons, that's exactly what you'll do.
+
+# The Architecture You're Building
+
+Every lesson in Module 2 adds a new layer to a modern data platform. By the end of the module, you'll have touched every major component of the system that a company like FreshCart would actually use.
+
+![module-2-overview](./assets/module-2-overiew.png)
+
+Think of this as the map. Each unit lights up a new section.
+
+Let's get started!
+
+---
+
+## Where are we?
+
+It's your first day. Your manager walks you through the company's data landscape and asks a deceptively simple question: *"What kind of data do we have, and where does it live?"*
+
+FreshCart's transactional orders sit in a PostgreSQL database. Customer reviews are unstructured text. Real-time delivery tracking is semi-structured JSON from a logistics API. Product catalogue images are binary blobs. You realise that "data" is not one thing — and the tools you learned in Module 1 only handle part of the picture.
+
+## Why this matters
+
+Before you can build anything, you need a mental model of the data engineering landscape. This unit gives you the vocabulary and conceptual framework to distinguish between different types of data, different types of databases, and different processing paradigms. Without this, every subsequent technical decision will lack context.
